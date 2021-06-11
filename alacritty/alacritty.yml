@@ -1,0 +1,43 @@
+# IMPORTS
+import:
+  - /home/srinath/.config/alacritty/nord.yml
+
+# WINDOW
+window:
+  dynamic_padding: true
+background_opacity: 0.9
+
+dynamic_title: true
+  
+# FONT
+font:
+  normal:
+    family: Jetbrains Mono
+  size: 9.0
+
+# CURSOR
+cursor:
+  style:
+    shape: Underline
+    blinking: Always
+  blink_interval: 500
+
+# MOUSE
+mouse:
+  hide_when_typing: true
+
+# KEYS
+key_bindings:
+
+  - { key: V,              mods: Control|Shift, mode: ~Vi,        action: Paste            }
+  - { key: C,              mods: Control|Shift,                   action: Copy             }
+  - { key: F,              mods: Control|Shift, mode: ~Search,    action: SearchForward    }
+  - { key: B,              mods: Control|Shift, mode: ~Search,    action: SearchBackward   }
+  - { key: C,              mods: Control|Shift, mode: Vi|~Search, action: ClearSelection   }
+  - { key: Insert,         mods: Shift,                           action: PasteSelection   }
+  - { key: Key0,           mods: Control,                         action: ResetFontSize    }
+  - { key: Equals,         mods: Control,                         action: IncreaseFontSize }
+  - { key: Plus,           mods: Control,                         action: IncreaseFontSize }
+  - { key: NumpadAdd,      mods: Control,                         action: IncreaseFontSize }
+  - { key: Minus,          mods: Control,                         action: DecreaseFontSize }
+  - { key: NumpadSubtract, mods: Control,                         action: DecreaseFontSize }
